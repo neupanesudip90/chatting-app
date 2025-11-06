@@ -40,7 +40,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 
 ## 📂 Project Structure
 
-MERN-Chat-App/
+Message-App/
 │
 ├── Backend/
 │ ├── app.js
@@ -72,8 +72,6 @@ MERN-Chat-App/
 │
 ├── .env
 └── README.md
-
----## 📥 Installation
 
 ---
 
@@ -139,13 +137,10 @@ How it works:
 ❌ Active user count not updating correctly?
 
 
-📸 UI Overview
-
-💬 Chat Window: Real-time message list with scroll
-
+📸 UI Overview:
+ 💬 Chat Window: Real-time message list with scroll
 👤 Sidebar: Displays chatrooms or user info
-
-📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
+ 📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
 
 
 🧾 License
