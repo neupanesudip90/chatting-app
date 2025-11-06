@@ -133,18 +133,18 @@ How it works:
 4. The backend receives the message, saves it to the database, and broadcasts it to all connected clients.
 5. The frontend listens for incoming messages and updates the chat UI in real-time.
 
-🧠 Common Issues
-❌ Active user count not updating correctly?
+### 🧠 Common Issues
+-❌ Active user count not updating correctly?
 
 
-📸 UI Overview:
- ---💬 Chat Window: Real-time message list with scroll
- ---👤 Sidebar: Displays chatrooms or user info
- ---📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
+### 📸 UI Overview:
+ - 💬 Chat Window: Real-time message list with scroll
+ - 👤 Sidebar: Displays chatrooms or user info
+ - 📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
 
 
-🧾 License
+### 🧾 License
 
-This project is open-source and available under the MIT License.
+-This project is open-source and available under the MIT License.
 
-Happy Coding! 🚀
+- Happy Coding! 🚀
