@@ -50,7 +50,12 @@ Message-App/
 │ │ └── userModel.js
 │ ├── routes/
 │ └── controllers/
-│
+│ │    ├── authController.js
+│ │    └── messageController.js
+│ └── config
+│ │   └── db.js
+│ └── middleware/
+|
 ├── Frontend/
 │ ├── src/
 │ │ ├── components/
