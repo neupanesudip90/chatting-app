@@ -1,0 +1,17 @@
+@font-face {
+  font-family: JosefinSans-Bold;
+  src: url(../src/assets/fonts/JosefinSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: SourceCodePro-Bold;
+  src: url(../src/assets/fonts/SourceCodePro-Bold.ttf);
+}
+
+@import "tailwindcss";
+
+
+@theme{
+  --font-Josefin: 'JosefinSans-Bold';
+  --font-SourceCode: 'SourceCodePro-Bold';
+}
