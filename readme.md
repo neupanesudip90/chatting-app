@@ -21,6 +21,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 ## 🛠️ Tech Stack
 
 ### **Frontend**
+
 - React.js
 - Redux Toolkit
 - Tailwind CSS
@@ -28,6 +29,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 - Material UI Icons
 
 ### **Backend**
+
 - Node.js
 - Express.js
 - MongoDB (Mongoose)
@@ -50,26 +52,21 @@ Message-App/
 │ │ └── userModel.js
 │ ├── routes/
 │ └── controllers/
-│ │    ├── authController.js
-│ │    └── messageController.js
+│ │ ├── authController.js
+│ │ └── messageController.js
 │ └── config
-│ │   └── db.js
-│ └── middleware/
+│ │ └── db.js
+│ └── middleware
 |
 ├── Frontend/
 │ ├── src/
 │ │ ├── components/
-│ │ │ ├── ChatWindow.jsx
-│ │ │ ├── Sidebar.jsx
-│ │ │ └── MobileChatList.jsx
 │ │ ├── redux/
 │ │ │ ├── authSlice.js
 │ │ │ ├── messageSlice.js
 │ │ │ └── store.js
 │ │ ├── pages/
-│ │ │ ├── Login.jsx
-│ │ │ ├── Register.jsx
-│ │ │ └── Home.jsx
+│ │ ├── utils/
 │ │ ├── assets/
 │ │ ├── App.jsx
 │ │ └── main.jsx
@@ -83,17 +80,21 @@ Message-App/
 ## ⚙️ Setup and Installation
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/mern-chat-app.git
 cd Message-App
 ```
+
 ### 2️⃣ Backend Setup
+
 ```bash
 cd Backend
 npm install
 ```
 
 create a `.env` file in the `Backend` folder with the following variables:
+
 ```
 MONGO_URI=your_mongodb_connection_string
 PORT=5000
@@ -101,30 +102,37 @@ JWT_SECRET=your_jwt_secret_key
 ```
 
 ### 3️⃣ Frontend Setup
+
 ```bash
 cd ../Frontend
 npm install
 ```
+
 ### 4️⃣ Running the Application
+
 #### Start the Backend server
+
 ```bash
 cd ../Backend
 npm run dev
 ```
+
 #### Start the Frontend development server
+
 ```bash
 cd ../Frontend
 npm run dev
 ```
+
 The frontend will be available at `http://localhost:5173` and the backend server at `http://localhost:5000`.
 
 Realtime socket connection will be established between frontend and backend for live chat functionality.
 const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:5173",
-    methods: ["GET", "POST"],
-    credentials: true,
-  },
+cors: {
+origin: "http://localhost:5173",
+methods: ["GET", "POST"],
+credentials: true,
+},
 });
 
 frontend connects via:
@@ -132,6 +140,7 @@ frontend connects via:
 const socket = io("http://localhost:5000", { transports: ["websocket"] });
 
 How it works:
+
 1. The frontend establishes a connection to the backend Socket.io server.
 2. The backend listens for incoming socket connections and emits events to connected clients.
 3. When a user sends a message, the frontend emits a socket event to the backend.
@@ -139,17 +148,18 @@ How it works:
 5. The frontend listens for incoming messages and updates the chat UI in real-time.
 
 ### 🧠 Common Issues
--❌ Active user count not updating correctly?
 
+- ❌ Active user count not updating correctly?
 
 ### 📸 UI Overview:
- - 💬 Chat Window: Real-time message list with scroll
- - 👤 Sidebar: Displays chatrooms or user info
- - 📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
 
+- 💬 Chat Window: Real-time message list with scroll
+- 👤 Sidebar: Displays chatrooms or user info
+- 📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
 
-### 🧾 License
+### 🧾License
 
 - This project is open-source and available under the MIT License.
+- This project is open-source and available under the MIT License.
 
-- Happy Coding! 🚀
+### Happy Coding! 🚀
