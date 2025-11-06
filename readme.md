@@ -39,7 +39,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 ---
 
 ## 📂 Project Structure
-
+```bash
 Message-App/
 │
 ├── Backend/
@@ -72,7 +72,7 @@ Message-App/
 │
 ├── .env
 └── README.md
-
+```
 ---
 
 ## ⚙️ Setup and Installation
