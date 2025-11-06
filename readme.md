@@ -160,6 +160,9 @@ How it works:
 ### 🧾License
 
 - This project is open-source and available under the MIT License.
+<<<<<<< HEAD
 - This project is open-source and available under the MIT License.
+=======
+>>>>>>> 928e982 (update user and message count)
 
 ### Happy Coding! 🚀

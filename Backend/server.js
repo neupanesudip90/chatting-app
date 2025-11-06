@@ -30,12 +30,20 @@ const io = new Server(server, {
   },
 });
 
+// Get initial total chat count from DB
+let totalChatCount = 0;
+const initializeChatCount = async () => {
+  totalChatCount = await Message.countDocuments();
+};
+initializeChatCount();
+
 io.on("connection", (socket) => {
   console.log("New client connected:", socket.id);
 
   //active user increment
   activeUsercount++;
   io.emit("activeUsers", activeUsercount);
+  io.emit("chatCount", totalChatCount);
 
   socket.on("sendMessage", async (data) => {
     try {
@@ -70,6 +78,10 @@ io.on("connection", (socket) => {
       console.error("Error sending message:", err);
     }
   });
+
+  // Update total chat count
+  totalChatCount++;
+  io.emit("chatCount", totalChatCount); // broadcast new count to everyone
 
   socket.on("disconnect", () => {
     activeUsercount--;

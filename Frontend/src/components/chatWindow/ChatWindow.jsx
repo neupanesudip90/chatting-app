@@ -20,6 +20,10 @@ function ChatWindow() {
   const messagesEndRef = useRef(null);
 
   const [activeUsers, setActiveUsers] = useState(0);
+<<<<<<< HEAD
+=======
+  const [totalChatCount, setTotalChatCount] = useState(0);
+>>>>>>> 928e982 (update user and message count)
   
   // Socket: track active users
    useEffect(() => {
@@ -28,8 +32,19 @@ function ChatWindow() {
        setActiveUsers(count);
      });
 
+<<<<<<< HEAD
      return () => {
        socket.off("activeUsers");
+=======
+     // Listen for total chat count update
+     socket.on("chatCount", (count) => {
+       setTotalChatCount(count);
+     });
+
+     return () => {
+       socket.off("activeUsers");
+       socket.off("chatCount");
+>>>>>>> 928e982 (update user and message count)
      };
    }, []);
 
@@ -97,6 +112,11 @@ function ChatWindow() {
     navigate(-1);
   };
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 928e982 (update user and message count)
   return (
     <div className="flex flex-col h-screen w-full bg-gray-100">
       {/* Header */}
@@ -109,7 +129,14 @@ function ChatWindow() {
           <img src={profile} alt="profile" className="h-12 w-12 rounded-full" />
           <div>
             <span className="font-semibold">Global Chat Room</span>
+<<<<<<< HEAD
             <span className="text-sm text-gray-600 block"> {activeUsers} users online </span>
+=======
+            <span className="text-sm text-gray-600 block">
+              {" "}
+              {activeUsers} users online | {totalChatCount} messages sent{" "}
+            </span>
+>>>>>>> 928e982 (update user and message count)
           </div>
         </div>
       </div>
