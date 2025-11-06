@@ -138,9 +138,9 @@ How it works:
 
 
 📸 UI Overview:
- 💬 Chat Window: Real-time message list with scroll
-👤 Sidebar: Displays chatrooms or user info
- 📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
+ ---💬 Chat Window: Real-time message list with scroll
+ ---👤 Sidebar: Displays chatrooms or user info
+ ---📱 Mobile Layout: Responsive with hidden sidebar and smooth transitions
 
 
 🧾 License
