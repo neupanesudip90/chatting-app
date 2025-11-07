@@ -41,6 +41,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 ---
 
 ## 📂 Project Structure
+
 ```bash
 Message-App/
 │
@@ -75,6 +76,7 @@ Message-App/
 ├── .env
 └── README.md
 ```
+
 ---
 
 ## ⚙️ Setup and Installation
@@ -147,9 +149,6 @@ How it works:
 4. The backend receives the message, saves it to the database, and broadcasts it to all connected clients.
 5. The frontend listens for incoming messages and updates the chat UI in real-time.
 
-### 🧠 Common Issues
-
-- ❌ Active user count not updating correctly?
 
 ### 📸 UI Overview:
 
