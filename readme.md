@@ -10,7 +10,7 @@ Users can **register**, **log in**, and **chat in a global chat room** with mess
 - 🔐 User authentication (login/register using cookies)
 - 💬 Real-time global chat using **Socket.io**
 - 🗨️ Messages are persisted in **MongoDB**
-- 👥 Live count of **active users online**
+- 👥 Live count of **active users online and messages**
 - 🕒 Automatic timestamp for each message
 - 📱 Responsive UI for **mobile and desktop**
 - ⚡ Instant message delivery (no page reload)
@@ -160,9 +160,5 @@ How it works:
 ### 🧾License
 
 - This project is open-source and available under the MIT License.
-<<<<<<< HEAD
-- This project is open-source and available under the MIT License.
-=======
->>>>>>> 928e982 (update user and message count)
 
 ### Happy Coding! 🚀
