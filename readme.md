@@ -149,7 +149,6 @@ How it works:
 4. The backend receives the message, saves it to the database, and broadcasts it to all connected clients.
 5. The frontend listens for incoming messages and updates the chat UI in real-time.
 
-
 ### 📸 UI Overview:
 
 - 💬 Chat Window: Real-time message list with scroll
@@ -159,5 +158,19 @@ How it works:
 ### 🧾License
 
 - This project is open-source and available under the MIT License.
+
+### Screenshots
+
+#### Registration Page
+
+![Registration Page](./images/ss1.PNG)
+
+#### Login Page
+
+![Login Page](./images/ss2.PNG)
+
+#### Chat Window
+
+![Chat Window](./images/ss3.PNG)
 
 ### Happy Coding! 🚀
